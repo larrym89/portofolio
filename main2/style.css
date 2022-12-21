@@ -1,0 +1,187 @@
+@import url("https://use.typekit.net/pam8jxt.css");
+
+:root {
+    --normal-link: #000000;
+    --active-link: #ae621f;
+    --mockup-fond: #fcfbfa;
+    --about-text: #040404;
+    --footer-color: #f1f0f2;
+}
+
+body {
+    background: var(--mockup-fond);
+}
+
+/* Home Section */
+
+img.logo {
+    width: 12rem;
+}
+
+section#home {
+    margin: 2rem 8rem;
+}
+
+a.nav-link {
+    font-family: "letter-gothic-std";
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+a.nav-link.activ {
+    color: var(--active-link);
+}
+
+img.hero {
+    width: 100%;
+}
+
+p.hero-title {
+    font-family: "Lucida Bright";
+    font-size: 80pt;
+    color: var(--active-link);
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+   
+}
+
+/* End Home Section */
+
+
+/* About Section */
+section#about {
+    margin: 8rem 8rem;
+}
+
+div.about-text {
+    font-family: letter-gothic-std, monospace;
+    font-weight: 520;
+    font-size: 20pt;
+    color: var(--about-text);
+}
+
+h2.about-title {
+    font-weight: bold;
+    font-size: 48pt;
+    text-transform: uppercase;
+}
+
+/* End About Section */
+
+/* Portofolio Section */
+
+h2.portofolio-title {
+    font-family: letter-gothic-std, monospace;
+    font-weight: bold;
+    font-size: 60pt;
+    color: var(--about-text);
+    text-transform: uppercase;
+}
+
+hr.h-line {
+    border: 10px;
+    background-color: var(--active-link);
+    color: var(--active-link);
+    height: 4.43px;
+    width: 300px
+}
+
+/* End Portofolio Section */
+
+
+/* Footer Section */
+
+section#footer {
+    margin: 6rem 8rem;
+}
+
+div.footer {
+    border: 2.43px solid var(--active-link);
+    background-color: var(--footer-color);
+}
+
+.footer-title {
+    font-family: "Lucida Bright";
+    font-size: 46pt;
+    color: var(--active-link);
+
+}
+
+.card-text {
+    font-family: letter-gothic-std, monospace;
+    font-weight: 520;
+    font-size: 23pt;
+    color: var(--about-text);
+}
+
+i.icon {
+    color: var(--normal-link)
+}
+
+/* End Footer Section */
+
+
+/* Responsive */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    p.hero-title {
+        font-size: 20pt;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    section#home {
+        margin: 1rem 0rem;
+    }
+
+    img.logo {
+        width: 6rem;
+    }
+
+    p.hero-title {
+        font-size: 20pt;
+    }
+
+    section#about {
+        margin: 3rem 0rem;
+    }
+
+    div.about-text {
+        text-align: center;
+
+        margin-bottom: 2rem;
+        font-weight: 520;
+        font-size: 18pt;
+        color: var(--about-text);
+    }
+
+    h2.about-title {
+
+        font-weight: bold;
+        font-size: 28pt;
+    }
+
+    h2.portofolio-title {
+        font-size: 28pt;
+    }
+
+    section#footer {
+        margin: 4rem 0rem;
+    }
+
+    .footer-title {
+        font-size: 22pt;
+
+    }
+
+    .card-text {
+        font-weight: 520;
+        font-size: 10pt;
+        color: var(--about-text);
+    }
+
+    div.social-links {
+        display: inline;
+        margin: none;
+    }
+}
