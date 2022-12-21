@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 500px;
+            background-color: #050210;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle-out {
+            height: 300px;
+            width: 300px;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: spin 1s linear infinite;
+
+        }
+
+        .circle-out::before {
+            content: "";
+            position: absolute;
+            height: 300px;
+            border-radius: 50%;
+            width: 300px;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            filter: blur(40px);
+        }
+
+        .circle-out::after {
+            position: absolute;
+            content: '';
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: #050210;
+        }
+
+        .circle-in {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: #050210;
+            filter: contrast(0.8);
+            z-index: 2;
+            animation: scale 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            25% {
+                transform: rotate(90deg)
+            }
+
+            50% {
+                transform: rotate(180deg)
+            }
+
+            75% {
+                transform: rotate(270deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes scale {
+            from {
+                width: 0px;
+                height: 0px;
+            }
+
+            to {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="circle-out">
+            <div class="circle-in"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
