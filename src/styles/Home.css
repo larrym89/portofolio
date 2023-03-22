@@ -1,0 +1,101 @@
+:root {
+    --main-text-color: #fff5bb;
+    --main-bg-color: #6b6b6b;
+    --second-bg-color: #006666;
+    --aux-color: #9dbcbc;
+}
+
+.home {
+    width: 100%;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;;
+    color: var(--main-text-color);
+}
+
+.about {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--second-bg-color);
+    color: var(--main-text-color);
+}
+
+.about h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    color: var(--main-text-color);
+    height: 50px;
+}
+
+.about .prompt {
+    width: 40%;
+    font-size: 30px;
+}
+
+.prompt svg {
+    font-size: 60px;
+    margin: 5px;
+    color: var(--main-text-color);
+}
+
+.skills {
+    font-size: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills h1 {
+    color: var(--main-bg-color);
+}
+
+.skills .list {
+    list-style: none;
+    width: 60%;
+}
+
+.list span {
+    font-size: 20px;
+}
+
+.item h2{
+    color: var(--main-bg-color);
+}
+
+.item span{
+    color: var(--main-bg-color);
+}
+
+.iconsSocial {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .about h2 {
+        font-size: 40px;
+    }
+
+    .about .prompt {
+        margin-top: 10px;
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .skills {
+        text-align: center;
+    }
+
+    .list {
+        padding: 0;
+    }
+
+    .skills h2 {
+        font-size: 30px;
+    }
+}
